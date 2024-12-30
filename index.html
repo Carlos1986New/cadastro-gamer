@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Gamer</title>
+</head>
+<body>
+    <h1> Cadastro Gamer</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados do Gamer</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="Nome" id="inome" required maxlength="30" placeholder="Nome completo">
+            </p>
+            <p>
+                <label for="inickname">Nickname</label>
+                <input type="text" name="nickname" id="inickname" required maxlength="15">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="(xx) xxxxx-xxxx">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                    <label for="inasc">Data de Nascimento</label>
+                    <input type="date" name="nasc" id="inasc" required>
+            </p>
+            <p>
+                <label for="igame">Jogo preferido</label>
+                <input type="text" name="Gamer" id="igame" required maxlength="30">
+            </p>                                 
+        </fieldset>
+        <fieldset>
+            <legend>Tipo favorito de jogo</legend>
+            <input type="checkbox" name="acao" id="iacao">
+                <label for="iacao">Ação</label>
+                <input type="checkbox" name="terror" id="iterror">
+                <label for="iterror">Terror</label>
+                <input type="checkbox" name="FPS" id="ifps">
+                <label for="Ifps">FPS</label>
+                <input type="checkbox" name="rpg" id="irpg">
+                <label for="irpg">RPG</label>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas" value="m">
+            <label for="imas">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F">
+            <label for="ifem">Feminino</label>                
+        </fieldset>
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
